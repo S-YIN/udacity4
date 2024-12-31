@@ -8,8 +8,10 @@ from langchain.embeddings.sentence_transformer import SentenceTransformerEmbeddi
 from langchain.vectorstores import Chroma
 from langchain.prompts import PromptTemplate
 from langchain import LLMChain
+from dotenv import load_dotenv
 
-os.environ['OPENAI_API_KEY'] = "" #your API Key
+load_dotenv()  
+# os.environ['OPENAI_API_KEY'] = "" #your API Key
 
 
 #### Step 2 Generating Real Estate Listings ####
